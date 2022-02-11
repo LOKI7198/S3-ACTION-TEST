@@ -9,8 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
-    - uses: LOKI7198-S3-ACTION-TEST@main
+    - uses: actions/checkout@master
+    - uses: LOKI7198-S3-ACTION-TEST@master
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
