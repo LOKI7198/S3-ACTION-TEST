@@ -13,12 +13,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Configure AWS credentials from Test account
-      uses: aws-actions/configure-aws-credentials@v1
+    - name: Configure AWS Credentials
+      uses: fuller-inc/actions-aws-assume-role@v1
       with:
-        role-to-assume: arn:aws:iam::144968974651:role/s3-githubaction-role
-        role-duration-seconds: 1200
         aws-region: ap-south-1
+        role-to-assume: arn:aws:iam::144968974651:role/s3-githubaction-role-direct-ap-south-1
+        role-session-tagging: true
 
     - name: Copy files to the test website with the AWS CLI
       run: |
