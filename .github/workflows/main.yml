@@ -17,7 +17,7 @@ jobs:
       uses: fuller-inc/actions-aws-assume-role@v1
       with:
         aws-region: ap-south-1
-        role-to-assume: arn:aws:iam::144968974651:role/s3-githubaction-role-direct-ap-south-1
+        role-to-assume: arn:aws:iam::144968974651:role/s3-github-direct-role-ap-south-1
         role-session-tagging: true
 
     - name: Copy files to the test website with the AWS CLI
