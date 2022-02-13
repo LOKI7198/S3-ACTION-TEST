@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Configure AWS Credentials
-      uses: LOKI7198/S3-ACTION-TEST-direct@v1
+      uses: LOKI7198/S3-ACTION-TEST-direct@v2
       with:
         aws-region: ap-south-1
         role-to-assume: arn:aws:iam::144968974651:role/githubaction-role
