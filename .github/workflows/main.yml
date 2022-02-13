@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Configure AWS Credentials
-      uses: LOKI7198/S3-ACTION-TEST-direct/actions-aws-assume-role@v1
+      uses: LOKI7198/S3-ACTION-TEST-direct/actions-aws-assume-role@v2
       with:
         aws-region: ap-south-1
         role-to-assume: arn:aws:iam::144968974651:role/s3-github-direct-role-ap-south-1
